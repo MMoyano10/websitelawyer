@@ -1,0 +1,424 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    width:100%;
+    top: 0;
+    left: 0;
+
+}
+
+/*encabezado*/
+.logo img{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 200px;
+    width: 200px;
+}
+
+/*menu*/
+.menu{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    padding: 0px 20px;
+    background: #f3f3f3;
+}
+
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li > a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 23px;
+    font-size:x-large;
+    transition: all 250ms ease;
+    font-weight: bolder;
+}
+
+nav > ul > li > a:hover{
+    color: rgb(41, 160, 184);
+}
+
+/*section*/
+.wrp{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    
+}
+.portada{
+    width: 100%;
+    height: 100%;
+    background: url("https://www.brazil.tm/uploads/subconteudo/imagem%20principal/abogado%20y%20oficina%20de%20abogados%20en%20brasil.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size:contain
+}
+.contenido{
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,11,0.6);
+}
+.contenido .info{
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+.contenido .info h1{
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.contenido .info a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px 25px;
+    color: #fff;
+    background: #4897C3;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border:2px solid transparent;
+    transition: all 30ms ease;
+    letter-spacing: 0.5px;
+}
+.contenido .info a:hover{
+    background: transparent;
+    border: 2px solid #fff;
+}
+.curveado{
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+}
+.curveado img{
+    width: 100%;
+}
+
+
+/*boton*/
+
+/*end boton*/
+
+
+.texto-seccion #boton:hover{
+    color:rgb(32, 168, 157);
+}
+.imagen-box{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 140px;
+    width: 800px;
+    margin-right: 200px;
+}
+.imagen-box img{
+    opacity: 1;
+    width: 800px;
+}
+
+.text-box{
+    color: rgb(7, 0, 0);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bolder;
+    font-size: x-large;
+}
+.texto-seccion img{
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-left: 320px;
+    width: 40%;
+}
+/*article*/
+article{
+    padding-top: 20px;
+}
+.tarjeta{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:620px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.titulo{
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 10px 0 10px;;
+}
+.cuerpo{
+    padding: 10px;
+}
+.cuerpo img{
+    margin-left: 270px;
+    height: 80px;
+}
+.pie{
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+}
+.pie a{
+    text-decoration: none;
+    color: white;
+}
+.pie a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: ""
+}
+.tarjetas{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+article{
+    height: 400px;
+    width: 100%;
+}
+article .message-1{
+    padding: 100px;
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+/*services*/
+
+.title-services-box{
+    margin-top: 40px;
+    text-align: center;
+    padding: 100px;
+}
+.title-servicios{
+    
+    display:inline-block;
+    position: relative;
+    
+}
+.title-servicios::after,.title-servicios::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    top:0.6em;
+}
+
+.title-servicios::before{
+    left:-140px;
+}
+.title-servicios::after{
+    right:-140px;
+}
+
+/*main*/
+
+main{
+    height: 1900px;
+    padding-top: 30px;
+    width: 100%;
+    background: rgb(100, 100, 148);
+}
+.message-2{
+    padding: 100px;
+    color:rgb(255, 255, 255);
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.services-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*footer*/
+footer{
+    margin-top: 25x;
+    width: 100%;
+    background: #f3f3f3;
+    color: #fff;
+}
+.logo-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo-footer img{
+    width:130px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.contactanos{
+    display: flex;
+    justify-content: center;
+}
+.contactanos button{
+    height: 50px;
+    width: 200px;
+    background: #fff;
+    margin-left: 30px;
+    border: 1px solid blue;
+    border-radius: 45%;
+}
+#phone::before{
+    content: "📞";
+}
+#email::before{
+    content: "📩";
+}
+
+
+.redes-sociales{
+    width: 100%;
+}
+.redes-sociales ul{
+    display: flex;
+    justify-content: center;
+}
+.redes-sociales ul li{
+    padding: 15px;
+
+}
+.redes-sociales img{
+    width: 30px;
+}
+
+
+@media (max-width: 952px){
+    .wrp{
+        
+        width: 100%;
+        position:fixed;
+    }
+}
